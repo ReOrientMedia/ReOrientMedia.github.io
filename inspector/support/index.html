@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>PDF Inspector Support</title>
+  </head>
+
+  <body>
+    <h1>PDF Inspector &mdash; Support</h1>
+
+    <div>
+      Welcome to the support page for PDF Inspector. Here you can find information about how to do things in PDF Inspector, or how to get help if you run into issues.
+    </div>
+
+    <div>
+      Topics: <br/>
+      <ul>
+	<li><a href="#linkissues">How to detect link issues in a PDF</a></li>
+	<li><a href="#linkmods">How to create/delete/modify links in a PDF</a></li>
+	<li><a href="#mdscan">How to automatically scan a page in a PDF for metadata information</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h2>How to detect link issues in a PDF</h2>
+      <a name="linkissues"></a>
+      <h3>To detect and/or fix issues with internal links:</h3>
+      <ol>
+	<li>Click on Tools &gt; Issues &gt; Links</li>
+	<li>Verify that the presented issues (if any) are correct</li>
+	<li>Click on "Resolve Issues" (if any) to resolve the issues</li>
+      </ol>
+      Note that issues are sometimes <em>stacking</em>, which means PDF Inspector will sometimes give a new set of issues and ask you whether to fix them as well. This may happen more than once.
+
+      <h3>To detect issues with external links</h3>
+      <ol>
+	<li>Click on Tools &gt; Issues &gt; External Links</li>
+	<li>A progress bar appears and, depending on how many links there are in the PDF, may take a while to complete.</li>
+	<li>A window with information about problems encountered, if any, appears. At the top of the window is a summary, indicating total number of URLs, how many URLs were okay, okay (with irregular status codes), and/or gave errors (such as a 404 error).</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>How to create/delete/modify links in a PDF</h2>
+      <a name="linkmods"></a>
+      <h3>Creating new links</h3>
+      <ol>
+	<li>To create a new internal or external link, do: Tools &gt; New Internal Link or Tools &gt; New External Link</li>
+	<li>The <em>Link Properties</em> panel will appear if hidden, and a new click area will appear on the PDF as a red square</li>
+	<li>Drag the red square around to move it; drag at the corners or edges to resize it (note: if you have a report window open, you sometimes need to close it in order to be able to move the square)</li>
+      </ol>
+      <h3>Deleting a link</h3>
+      <ol>
+	<li>Select the link by clicking on it (if you don't see a colored rectangle around the link, you may need to enable <em>Highlight Links</em>)</li>
+	<li>In the <em>Link Properties</em> panel, click on "Del"</li>
+      </ol>
+      <h3>Modifying a link's properties</h3>
+      <ol>
+	<li>Select the link by clicking on it (if you don't see a colored rectangle around the link, you may need to enable <em>Highlight Links</em>)</li>
+	<li>In the <em>Link properties</em> panel, click on "Edit" to begin editing</li>
+	<li>Click on the property you wish to edit (you may need to double click). Note that you cannot change certain properties, such as Source page or Object ID.</li>
+	<li>(optional) Click "Done"</li>
+      </ol>
+      
+      <div>
+	<h2>How to automatically scan a page in a PDF for metadata information</h2>
+	<a name="mdscan"></a>
+	<ol>
+	  <li>Go to the page containing metadata information</li>
+	  <li>Click on Tools &gt; Metadata Scan Page</li>
+	  <li>Review the resulting metadata information and adjust misinterpretations where appropriate</li>
+	</ol>
+    </div>
+  </body>
+</html>
